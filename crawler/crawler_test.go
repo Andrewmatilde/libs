@@ -99,3 +99,7 @@ func TestFetchIssueWithCommentsByLabels_Show(t *testing.T) {
 		}
 	}
 }
+
+func TestListTags(t *testing.T) {
+	fmt.Println(ListTags(client, "pingcap", "tidb"))
+}
